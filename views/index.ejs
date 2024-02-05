@@ -1,14 +1,24 @@
 <%- include('./partials/head') %>
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+  <section id="me">
+    <h1 class="name"> <%= data.name %> <%=data.surname %></h1>
+    <div class="content-1">
+      <strong class="age">
+        <span><%= data.custom.age %></span>
+      </strong>
+      <time class="time"><%= data.custom.birthday %></time>
+    </div>
+    <div class="content-2">
+      <button class="flip-card-bt">Flip Card</button>
+      <p hidden>Insprired by Tyler The Creator</p>
+    </div>
+  </section>
 
-  <p><%= data.name %></p>
+  <section id="things-i-like" hidden>
+    <h2>A few things I like</h2>
+    <h2>Socials</h2>
+    <a href="#me" class="flip-card-bt" hidden>Flip card</a>
+  </section>
 
-  <footer></footer>
-</article>
 
-<%- include('./partials/foot') %>
+  <%- include('./partials/foot') %>
