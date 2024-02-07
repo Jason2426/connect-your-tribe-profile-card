@@ -6,9 +6,9 @@
       <img src="./images/photoOfMe.png" alt="" class="img">
       <img src="./images/memoji.png" alt="" class="img">
       <!-- <img src="./images/IMG_5880.JPG" alt="" class="img"> -->
-      
+
     </section>
-    <section class="indicator">•<strong>•</strong>•</section> 
+    <section class="indicator">•<strong>•</strong>•</section>
 
     <section class="fullName">
       <h1>
@@ -18,7 +18,9 @@
     </section>
 
     <section class="birthday">
-      <h2><time><%= data.custom.birthday%></time></h2>
+      <h2><time>
+          <%= data.custom.birthday%>
+        </time></h2>
     </section>
 
     <section class="socials">
@@ -28,7 +30,9 @@
     </section>
 
     <section class="oneliner">
-      <h2 class="oneliner-text">Silence SvP</h2>
+      <h2 class="oneliner-text">
+        <%= data.custom.oneLiner%>
+      </h2>
     </section>
 
     <section class="hobbys">
@@ -45,12 +49,12 @@
     </section>
 
     <section class="oneThing">
-      <h3>One Thing i can't live without : </h3>
+      <h3 class="oneThingQuestion">One Thing I can't live without?</h3>
       <h2 class="theThing">MUSIC</h2>
     </section>
 
     <section class="quote">
-      <h2 class="quote-text">"Only concious for a moment."</h2>
+      <h2 class="quote-text">"<%= data.custom.quote%>"</h2>
     </section>
 
   </section>
