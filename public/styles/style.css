@@ -9,6 +9,8 @@
     --primary-spacing: 1em;
     --secondary-spacing: 2em;
 
+    --standard-border-radius: 1.25em;
+
 }
 
 body {
@@ -18,6 +20,7 @@ body {
 }
 
 /* Mobile First CSS */
+
 .aboutme {
     display: flex;
     flex-direction: column;
@@ -28,10 +31,101 @@ p {
     font-size: 2em;
 }
 
+/* img section */
+.img-carousel {
+    margin: var(--secondary-spacing);
+}
+
 .img-placeholder {
     background-color: var(--secondary-bg-color);
+    border-radius: 50%;
+    width: 20em;
 }
 
 .img {
-    width: 200px;
+    width: 20em;
+    border-radius: 50%;
+    background-color: var(--secondary-bg-color);
+}
+
+.indicator {
+    color: #4A4A4A;
+    font-size: 2em;
+}
+
+strong {
+    color: var(--accent-color);
+    margin: 0.25em;
+}
+
+/* Full name section */
+
+.fullName {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--standard-border-radius);
+    margin: var(--primary-spacing)
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* birthday section */
+
+
+.birthday {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--standard-border-radius);
+    margin: var(--primary-spacing);
+    padding: 1em;
+}
+
+time {
+    color: #616161;
+    font-size: 2.5em;
+}
+
+/* socials section */
+
+.socials {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--standard-border-radius);
+    margin: var(--primary-spacing);
+    padding: var(--primary-spacing);
+}
+
+/* oneliner */
+
+.oneliner {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--standard-border-radius);
+    margin: var(--primary-spacing);
+}
+
+/* hobbys */
+
+.hobbys {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--standard-border-radius);
+    margin: var(--primary-spacing);
+}
+
+/* oneThing */
+
+.oneThing {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--standard-border-radius);
+    margin: var(--primary-spacing);
+}
+
+/* quote */
+
+.quote {
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--standard-border-radius);
+    margin: var(--primary-spacing);
+}
+
+.quote-text {
+    font-size: 3em;
 }

@@ -3,34 +3,45 @@
   <section class="aboutme">
 
     <section class="img-carousel">
-      <article class="img-placeholder">
-        <img src="./images/memoji.png" alt="" class="img">
-      </article>
+      <!-- <article class="img-placeholder"> -->
+      <!-- <img src="./images/photoOfMe.png" alt="" class="img"> -->
+      <img src="./images/memoji.png" alt="" class="img">
+      <!-- </article> -->
+      <section class="indicator">•<strong>•</strong>•</section>
     </section>
 
-    <article class="fullname">
-      <h1>Jason Wong</h1>
-    </article>
+    <section class="fullName">
+      <h1>
+        <%= data.name%>
+          <%= data.surname%>
+      </h1>
+    </section>
 
-    <article class="birthday">
-      <time>06/02/2004</time>
-    </article>
+    <section class="birthday">
+      <h2><time><%= data.custom.birthday%></time></h2>
+    </section>
 
-    <article class="socials">
+    <section class="socials">
       Github Instagram Spotiy
-    </article>
+    </section>
 
-    <article class="oneliner">
+    <section class="oneliner">
       <h2>Silence SVP</h2>
-    </article>
+    </section>
 
-    <article class="hobbys">
+    <section class="hobbys">
       <p>🇭🇰 🎧 🛩️ 🌏 🍱 🏌🏻🧑🏻‍💻 🏂</p>
-    </article>
+    </section>
 
-    <article class="quote">
-      <h3>"Only concious for today"</h3>
-    </article>
+    <section class="oneThing">
+      <h3>One Thing i can't live without : </h3>
+      <h2>MUSIC</h2>
+    </section>
+
+    <section class="quote">
+      <h2 class="quote-text">"Only concious for a moment."</h2>
+    </section>
+    
   </section>
 
   <%- include('./partials/foot') %>
