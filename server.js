@@ -24,6 +24,7 @@ app.use(express.static('public'))
 // Maak een GET route voor de index
 app.get('/', function (request, response) {
   try {
+    //Het omzetten van een string naar ... ? 
     data.data.custom = JSON.parse(data.data.custom)
   } catch (error) {
     console.log('Er ging iets mis met de data...')

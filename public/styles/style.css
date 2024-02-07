@@ -1,115 +1,15 @@
-/*goodluck*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/*goodluck lil dude*/
+
+:root {
+    --main-bg-color: #0F0F0F;
+    --secondary-bg-color: #222222;
+    --main-text-color: #FFFFFF;
+    --accent-color: #1DE384;
+
+     --primary-spacing: 1em;
+     --secondary-spacing: 2em;
 }
 
 body {
-    background-image: url(../images/qkiu86oypn571.webp);
-    background-size: cover;
-    /* background-col or: #F8F0D2; */
-    font-family: 'Lalezar', cursive;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0%;
-}
-
-section {
-    background-color: #fff;
-    width: 500px;
-    height: 300px;
-    border-radius: 2em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-div {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
-}
-
-div.content-2 {
-    justify-content: center;
-}
-
-p {
-    color: #8F7A65;
-    font-size: 0.90em;
-}
-
-.name {
-    color: #8F7A65;
-    font-size: 4em;
-    margin: 25px 0px -20px 35px
-}
-
-.age {
-    margin: 0px 0px 0px 35px;
-    font-size: 6em;
-    background-color: #69CAD2;
-    border-radius: 20px;
-    padding: .05em .15em;
-    color: white;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-}
-
-.age span {
-    position: relative;
-    top: 4px;
-    /* ruimte tussen text geleerd van Stefan*/
-    line-height: 1;
-    margin-top: 0.05em;
-}
-
-.time {
-    font-size: 3.5em;
-    color: #8F7A65;
-    ;
-    margin: 0.15em 0em 0em 0.10em;
-}
-
-.flip-card-bt {
-    font-weight: bold;
-    margin-top: -0.5em;
-    background-color: #F8C0BF;
-    color: white;
-    border-radius: 2em;
-    border-style: none;
-    width: 25%;
-    height: 35px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.flip-card-bt:hover {
-    background-color: #69CAD2;
-}
-
-:target {
-    background: #ffffff;
-}
-
-#things-i-like {
-    color: #8F7A65;
-    margin: 5px;
-}
-
-h2 {
-    margin-top: 15px;
-    margin-left: 20px;
-    font-size: 2.5em;
-}
-
-li {
-    background-color: #F8C0BF;
-    color: white;
-    border-radius: 2em;
-    min-width: 50px;
-    text-decoration: none;
-    list-style-type: none;
+    background: var(--main-bg-color);
 }
