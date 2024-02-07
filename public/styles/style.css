@@ -32,20 +32,32 @@ p {
 }
 
 /* img section */
+
 .img-carousel {
-    margin: var(--secondary-spacing);
+    margin: var(--secondary-spacing) var(--secondary-spacing) 0em var(--secondary-spacing);
+    padding-left: 0.75em;
+    /* so the first img centers */
+
+    display: flex;
+    gap: 50px;
+    /* Spacing between cards */
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding: 0 20px;
 }
 
-.img-placeholder {
-    background-color: var(--secondary-bg-color);
-    border-radius: 50%;
-    width: 20em;
+::-webkit-scrollbar {
+    scrollbar-color: var(--main-bg-color);
 }
 
 .img {
     width: 20em;
     border-radius: 50%;
     background-color: var(--secondary-bg-color);
+    scroll-snap-align: center;
+    margin-right: 0.6em;
+    /* so the second img centers */
 }
 
 .indicator {
@@ -83,6 +95,7 @@ h1 {
 time {
     color: #616161;
     font-size: 2.5em;
+    font-weight: bold;
 }
 
 /* socials section */
@@ -94,6 +107,7 @@ time {
     padding: var(--primary-spacing);
 }
 
+
 /* oneliner */
 
 .oneliner {
@@ -101,6 +115,47 @@ time {
     border-radius: var(--standard-border-radius);
     margin: var(--primary-spacing);
 }
+
+.oneliner-text {
+    font-size: 3em;
+    font-weight: 600;
+    color: #383737;
+}
+
+.oneliner-text {
+    background: linear-gradient(
+      45deg,
+      #274fbd,
+    #01d8fd,
+    #14dfea,
+    #3fc12a,
+    #f9ac07,
+    #5406d9,
+    #e912a3,
+    #7a3bca,
+    #f9ac07,
+    #7a3bca
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 20s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+  
+
+
 
 /* hobbys */
 
