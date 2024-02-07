@@ -123,39 +123,36 @@ time {
 }
 
 .oneliner-text {
-    background: linear-gradient(
-      45deg,
-      #274fbd,
-    #01d8fd,
-    #14dfea,
-    #3fc12a,
-    #f9ac07,
-    #5406d9,
-    #e912a3,
-    #7a3bca,
-    #f9ac07,
-    #7a3bca
-    );
+    background: linear-gradient(45deg,
+            #274fbd,
+            #01d8fd,
+            #14dfea,
+            #3fc12a,
+            #f9ac07,
+            #5406d9,
+            #e912a3,
+            #7a3bca,
+            #f9ac07,
+            #7a3bca);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient 20s ease infinite;
-  }
-  
-  @keyframes gradient {
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
     0% {
-      background-position: 0 50%;
+        background-position: 0 50%;
     }
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-      background-position: 0 50%;
+        background-position: 0 50%;
     }
-  }
-  
-
-
+}
 
 /* hobbys */
 
@@ -163,6 +160,17 @@ time {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
     margin: var(--primary-spacing);
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+    font-size: 3em;
+    margin: 0.5em;
 }
 
 /* oneThing */
@@ -171,6 +179,11 @@ time {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
     margin: var(--primary-spacing);
+}
+
+.theThing {
+    font-size: 2.5em;
+    color: var(--accent-color);
 }
 
 /* quote */
