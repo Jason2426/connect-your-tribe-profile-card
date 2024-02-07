@@ -6,10 +6,32 @@
     --main-text-color: #FFFFFF;
     --accent-color: #1DE384;
 
-     --primary-spacing: 1em;
-     --secondary-spacing: 2em;
+    --primary-spacing: 1em;
+    --secondary-spacing: 2em;
+
 }
 
 body {
     background: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile First CSS */
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+}
+
+.img-placeholder {
+    background-color: var(--secondary-bg-color);
+}
+
+.img {
+    width: 200px;
 }
