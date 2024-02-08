@@ -9,6 +9,8 @@
     --primary-spacing: 1em;
     --secondary-spacing: 2em;
 
+    --section-spacing: 0.75em;
+
     --standard-border-radius: 1.25em;
 
 }
@@ -75,7 +77,7 @@ strong {
 .fullName {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
-    margin: var(--primary-spacing)
+    margin: var(--section-spacing)
 }
 
 h1 {
@@ -88,8 +90,8 @@ h1 {
 .birthday {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
-    margin: var(--primary-spacing);
-    padding: 1em;
+    margin: var(--section-spacing);
+    padding: var(--primary-spacing);
 }
 
 time {
@@ -103,7 +105,7 @@ time {
 .socials {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
-    margin: var(--primary-spacing);
+    margin: var(--section-spacing);
     padding: var(--primary-spacing);
 }
 
@@ -113,7 +115,7 @@ time {
 .oneliner {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
-    margin: var(--primary-spacing);
+    margin: var(--section-spacing);
 }
 
 .oneliner-text {
@@ -159,7 +161,7 @@ time {
 .hobbys {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
-    margin: var(--primary-spacing);
+    margin: var(--section-spacing);
     display: flex;
     flex-direction: row;
 }
@@ -179,7 +181,7 @@ li {
 .oneThing {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
-    margin: var(--primary-spacing);
+    margin: var(--section-spacing);
 }
 
 .oneThingQuestion {
@@ -198,7 +200,7 @@ li {
 .quote {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
-    margin: var(--primary-spacing);
+    margin: var(--section-spacing);
 }
 
 .quote-text {
