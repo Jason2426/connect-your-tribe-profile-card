@@ -21,6 +21,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.img-carousel {
+    grid-area: img;
+}
+.fullName {
+    grid-area: name;
+}
+.birthday {
+    grid-area: birthday;
+}
+.socials{
+    grid-area: socials;
+}
+.hobbys{
+    grid-area: hobbys;
+}
+.oneliner {
+    grid-area: oneliner;
+}
+.quote{
+    grid-area: quote;
+}
+
+
 /* Mobile First CSS */
 
 .aboutme {
@@ -109,6 +132,16 @@ time {
     padding: var(--primary-spacing);
 }
 
+svg {
+    width: 5em;
+    margin: var(--primary-spacing);
+    fill: #616161;
+}
+
+svg:hover {
+    transition: ease-out 0.5s;
+    transform: scale(1.1);
+}
 
 /* oneliner */
 
@@ -162,8 +195,6 @@ time {
     background-color: var(--secondary-bg-color);
     border-radius: var(--standard-border-radius);
     margin: var(--section-spacing);
-    display: flex;
-    flex-direction: row;
 }
 
 ul {
@@ -171,9 +202,14 @@ ul {
 }
 
 li {
-    float: left;
+    float: inline-start;
     font-size: 3em;
     margin: 0.5em;
+}
+
+li:hover {
+    transition: ease-out 0.5s;
+    transform: scale(1.25);
 }
 
 /* oneThing */
@@ -193,6 +229,11 @@ li {
 .theThing {
     font-size: 3em;
     color: var(--accent-color);
+    transition: transform 1.25s ease-in-out;
+}
+
+.theThing:hover {
+    transform: rotateX(720deg) scale(1.5);
 }
 
 /* quote */
@@ -206,4 +247,165 @@ li {
 .quote-text {
     font-size: 2.75em;
     padding: 1.5em 0em 1.5em 0em;
+}
+
+/* #region big pHone stylinG brrr */
+
+@media (min-width: 37.18em) {
+
+    /* hobbys */
+
+    li {
+        margin: 0.75em;
+    }
+
+    /* oneThing */
+
+    .oneThingQuestion {
+        font-size: 2em;
+    }
+
+}
+
+/* quote */
+
+.quote-text {
+    font-size: 3em;
+}
+
+/* #endregion */
+
+@media (min-width: 37.81em) {
+
+    .indicator {
+        display: none;
+    }
+
+    .aboutme {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 7% 7% 7% 7% 15% 15%;
+        grid-template-areas: 
+        "img img"
+        "name name"
+        "birthday birthday"
+        "socials socials"
+        "oneliner oneliner"
+        "hobbys onething"
+        "quote quote"
+        ;
+    }
+
+
+   
+
+
+}
+
+/* Jumped to macbook screen :( */ 
+@media (min-width: 70em) {
+
+    .aboutme {
+        margin: 4em 10em 5em 10em;
+        height: 100dvh;
+        display: grid;
+        grid-template-columns: auto 33% 33%;
+        grid-template-rows: 17.5% 30% 17.5% 17.5%;
+
+        grid-template-areas:
+            "img socials oneliner"
+            "img hobbys onething"
+            "name quote quote"
+            "birthday quote quote"
+        ;
+    }
+
+    /* img */
+
+    .img {
+        height: 18em;
+
+    }
+
+    .img-carousel {
+        grid-area: img;
+    }
+
+    /* name */
+
+    .fullName {
+        grid-area: name;
+    }
+
+    h1 {
+        margin: 0.5em;
+    }
+
+    /* birthday */
+
+    .birthday {
+        grid-area: birthday;
+    }
+
+    .birthDate {
+        margin: 0em
+    }
+
+    /* socials  */
+
+    .socials {
+        grid-area: socials;
+    }
+
+    svg {
+        width: 4em;
+        margin: 0.3em 0.6em 0.3em 0.6em;
+    }
+
+    /* oneliner */
+
+    .oneliner {
+        grid-area: oneliner;
+    }
+
+    .oneliner-text {
+        margin: 0.5em;
+    }
+
+    /* hobbys */
+
+    .hobbys {
+        grid-area: hobbys;
+    }
+
+    li {
+        margin: 0.25em;
+    }
+
+    /* oneThing */
+
+    .oneThingQuestion {
+        margin: 0.75em;
+    }
+
+    .theThing {
+        margin: 0.5em;
+    }
+
+    .theThing:hover {
+        transform : scale(1.5);
+        transform: rotateX(720deg) scale(2);
+    }
+
+    /* quote */ 
+
+    .quote {
+        grid-area: quote;
+    }
+
+    .quote-text {
+        font-size: 4em;
+        margin-top: -0.75em;
+    }
+
 }
